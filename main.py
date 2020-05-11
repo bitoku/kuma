@@ -1,10 +1,14 @@
 import pyautogui as pg
 
 pg.PAUSE = 0.02
+
+# change to fit your environment
 col = 192
 col_diff = 84
 row = 707
 row_diff = 57
+
+initial = (361, 817)
 
 script = "yo---isuta-to!!" \
          "zo-nntilyarennzinohazimarida" \
@@ -43,8 +47,8 @@ script = "yo---isuta-to!!" \
          "omedetou!"
 idx = 0
 
-pg.click(361, 817)
-pg.click(361, 817)
+pg.click(*initial)
+pg.click(*initial)
 pg.sleep(3)
 
 
